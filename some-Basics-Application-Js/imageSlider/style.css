@@ -1,0 +1,57 @@
+     * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+     }
+     
+     .slide-container {
+         width: 900px;
+         position: relative;
+         margin: auto;
+     }
+     
+     h1 {
+         margin: 10px auto;
+         text-align: center;
+     }
+     
+     .slider {
+         display: none;
+         height: 500px;
+     }
+     
+     img {
+         width: 100%;
+         height: 100%;
+     }
+     
+     .prev,
+     .next {
+         all: unset;
+         cursor: pointer;
+         position: absolute;
+         top: 80%;
+         left: 37%;
+         width: auto;
+         padding: 16px;
+         color: white;
+         font-weight: bold;
+         font-size: 18px;
+     }
+     
+     .next {
+         left: 53%;
+     }
+     
+     .prev:hover,
+     .next:hover {
+         background-color: rgba(0, 0, 0, 0.8);
+     }
+     
+     @media (max-width:700px) {
+         .slide-container {
+             width: 500px;
+             position: relative;
+             margin: auto;
+         }
+     }
